@@ -68,11 +68,11 @@ On Browser: `Output.html`
 
 The script starts with a seed URL and extracts all the links from the page using the BeautifulSoup library.
 
-- Each extracted link is checked to ensure it is an HTML page by verifying the `Content-Type` header and has more than `1000 bytes` of content using the `Content-Length` header.
+- Each extracted link is checked to ensure it is an HTML page by verifying the Content-Type header and has more than 1000 bytes of content using the Content-Length header.
 - Valid links are stored in a set to ensure uniqueness, and the script continues crawling by treating these valid links as new seed URLs.
-- To prevent overloading servers, a random delay is added between requests using `time.sleep(random.uniform(1,3))`
-- The process repeats until at least `500` unique URIs are collected, ensuring that only useful web pages are included.
-- The collected URIs are saved into a file named `saved_links.txt`, which can be used for further analysis or assignments.
+- To prevent overloading servers, a random delay is added between requests using time.sleep(random.uniform(1,3))
+- The process repeats until at least 500 unique URIs are collected, ensuring that only useful web pages are included.
+- The collected URIs are saved into a file named saved_links.txt, which can be used for further analysis or assignments.
 
 ### Google Colab:
 
